@@ -87,6 +87,10 @@
         li a:hover{
             background-color:gold;
         }
+		
+		.indent{
+			margin: 10px;
+		}
         
     </style>
     
@@ -109,7 +113,9 @@
         <h1><span>Keanu's blog</span></h1>
 		<img src="https://raw.githubusercontent.com/kmn5409/tes/gh-pages/Untitled.png" height="600">
 
-        <h3>Contents</h3>
+        <div class="indent">
+		<h3>Contents</h3>
+		</div>
         <ul>
             <li><a href="#p9">Recent post</a></li>
             <li><a href="#p1">First!!!</a></li>
@@ -117,6 +123,7 @@
             <li><a href="#p3">Third post!</a></li>
         </ul>
         
+		<div class="indent">
         <div id="first">
         
         <h2 id="p9">I know I haven't posted in a while and I apologize <span>lol</span> I'll blame it on Kieran and Kyle for having all these crazy plans consecutively but I have to say it was fun to be out the house and just being around people. I definitely am happy that I'm back home and appreciate it much more now, I know I have <span>lottts</span>  of challenges ahead of me but I feel like I have a chance. It definitely helps to know that I'm starting to patch things up with special people around me and I know I have a lot more work to do with it but I know that it's possible and is definitely worth fighting for. And no matter what has happened in the past you don't have to be defined by your past but what you yourself want to make of the future. </h2>
@@ -153,7 +160,8 @@
         <h6>Posted on 26/04/2017</h6>
         
         <p id="happy">I did work on my webpage design skills today which was fun</p>
-        
+		
+		</div>        
 		<script>
 			var picEls = document.getElementsByTagName("img");
 			picEls[1].title = picEls[1].alt;
