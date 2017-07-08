@@ -64,7 +64,7 @@
         }
         
         
-        div h2{
+        #p10{
             color:brown;
             font-weight:bold;
         }
@@ -72,6 +72,7 @@
         h6{
             line-height:0%;
         }
+		
         #fav{
             color:purple;
         }
@@ -79,7 +80,7 @@
         a{
             color:blue;
         }
-        
+		
         table a:hover{
             background-color:cyan;
         }
@@ -90,6 +91,23 @@
 		
 		.indent{
 			margin: 10px;
+		}
+		
+		.fade {
+		    -webkit-animation-name: fade;
+		    -webkit-animation-duration: 1.5s;
+		    animation-name: fade;
+		    animation-duration: 1.5s;
+		}
+		
+		@-webkit-keyframes fade {
+		    from {opacity: .4}
+		    to {opacity: 1}
+		}
+		
+		@keyframes fade {
+		    from {opacity: .4}
+		    to {opacity: 1}
 		}
         
     </style>
@@ -126,8 +144,38 @@
 		<div class="indent">
         <div id="first">
         
+		<h2 id="p10">So I didn't post in a month, yeah I know I'm slacking but since I started working it definitely has been a roller coaster lol, 
+		definitely has been eye opening	working somewhere though. I mean DO NOT get me wrong lol I have worked before at the dining commons and Penn State 
+		but this is like a full job. I remember my first week of working at NGC when every time I got home I kid you not I would drop down on the couch 
+		and just drop asleep. But overtime I'm getting accustomed to it you know and I'm learning a lot, it isn't hard-core programming but you know you 
+		have to work with what you got. Also Spiderman Homecoming is coming out soon and I'm going to see it but I don't know how it's going to be but hopefully it's good.
+		</h2></div>
+		
+		<div class="mySlides fade">
+		    <img src = "https://raw.githubusercontent.com/kmn5409/tes/master/Pictures/2017-06-29_0034_ngc_linewalk_9963.jpg" style="width:80%">
+		</div>
+		
+		<div class="mySlides fade">
+		    <img src = "https://raw.githubusercontent.com/kmn5409/tes/master/Pictures/2017-06-29_0249_ngc_linewalk_0181.jpg" style="width:80%">
+		</div>
+		
+		<div class="mySlides fade">
+		    <img src = "https://raw.githubusercontent.com/kmn5409/tes/master/Pictures/2017-06-29_0408_ngc_linewalk_0343.jpg" style="width:80%">
+		</div>
+		
+		<div class="mySlides fade">
+		    <img src = "https://raw.githubusercontent.com/kmn5409/tes/master/Pictures/2017-06-29_0478_ngc_linewalk_0418.jpg" style="width:80%">
+		</div>
+		<br>
+		
+		<div style="text-align:center">
+		    <span class="dot"></span>
+		    <span class="dot"></span>
+		    <span class="dot"></span>
+		    <span class="dot"></span>
+		</div>
+
         <h2 id="p9">I know I haven't posted in a while and I apologize <span>lol</span> I'll blame it on Kieran and Kyle for having all these crazy plans consecutively but I have to say it was fun to be out the house and just being around people. I definitely am happy that I'm back home and appreciate it much more now, I know I have <span>lottts</span>  of challenges ahead of me but I feel like I have a chance. It definitely helps to know that I'm starting to patch things up with special people around me and I know I have a lot more work to do with it but I know that it's possible and is definitely worth fighting for. And no matter what has happened in the past you don't have to be defined by your past but what you yourself want to make of the future. </h2>
-        </div> 
         <img id="Family" src = "https://raw.githubusercontent.com/kmn5409/tes/master/18671518_10155037469284193_4617823764385173627_o.jpg" height = "400" alt = "Could not have taken this picture without the helpful hand of my sister Khadine and holding my nephew on top of that mad props">
         <h6>Post on 25/05/2017</h6>
         
@@ -163,6 +211,28 @@
 		
 		</div>        
 		<script>
+		    
+		    var slideIndex = 0;
+		    showSlides();
+		    
+		    function showSlides() {
+		        var i;
+		        var slides = document.getElementsByClassName("mySlides");
+		        var dots = document.getElementsByClassName("dot");
+		        for (i = 0; i<slides.length; i++) {
+		            slides[i].style.display = "none";
+		        }
+		        
+		        console.log(slideIndex++);
+		        
+		        if(slideIndex> slides.length) {slideIndex = 1}
+		        for (i = 0; i<dots.length; i++) {
+		            dots[i].className = dots[i].className.replace(" active", "");
+		        }
+		        slides[slideIndex-1].style.display = "block";
+		        dots[slideIndex-1].className += " active";
+		        setTimeout(showSlides, 2000); //Chage image every 2 seconds
+		    }
 			var picEls = document.getElementsByTagName("img");
 			picEls[1].title = picEls[1].alt;
 		</script>
