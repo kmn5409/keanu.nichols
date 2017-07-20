@@ -109,18 +109,27 @@
 		    from {opacity: .4}
 		    to {opacity: 1}
 		}
+		
+        .navbar {
+          overflow: hidden;
+          position: fixed;
+          z-index: 2;
+          top: 0;
+          width: 100%;
+        }
         
     </style>
     
     </head>
     
     <body>
+    <div class="main">
         
         <span>
-        <table>
+        <table class="navbar">
             <thead>
                 <tr>
-                    <th style="text-align:left"><a href="https://kmn5409.github.io/keanu.nichols/"> About me</a></th>
+                    <th style="text-align:left"><a href="https://kmn5409.github.io/tes/"> About me</a></th>
                     <th id="Bat" style="text-align:middle"><a href="Batman">Batman</a></th>
                     <th style="text-align:right" ><a href="prac1">Detective Conan</a></th>
                 </tr>
@@ -140,7 +149,7 @@
             <li><a href="#p2">Second post!</a></li>
             <li><a href="#p3">Third post!</a></li>
         </ul>
-        <p hidden><a href="google659ac18abddb696d.html">Google</a></p>
+        
 		<div class="indent">
         <div id="first">
         
@@ -231,10 +240,11 @@
 		        }
 		        slides[slideIndex-1].style.display = "block";
 		        dots[slideIndex-1].className += " active";
-		        setTimeout(showSlides, 5000); //Chage image every 2 seconds
+		        setTimeout(showSlides, 2000); //Chage image every 2 seconds
 		    }
 			var picEls = document.getElementsByTagName("img");
 			picEls[1].title = picEls[1].alt;
 		</script>
+	</div>
     </body>
 </html>
