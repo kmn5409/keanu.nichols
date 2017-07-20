@@ -22,7 +22,6 @@
 		        text-shadow:2px 2px yellow;
 		        font-family:mono-space;
 		    }
-
 		    h2{
 		        font-family:sans-serif;
 		        color:blue;
@@ -42,11 +41,15 @@
 		        font-weight:bold;
 		    }
 		    
+            #Bat{
+                position:relative;
+                left:8.5%;
+            }		    
+		    
 		    #def{
 		        font-style:italic;
 		    }
 		    
-
 		    
 		    a{
 		        color:blue;
@@ -73,21 +76,32 @@
 		    p a:hover{
 		        background-color:purple;
 		    }
+		    
+        .navbar {
+          overflow: hidden;
+          position: fixed;
+          z-index: 2;
+          top: 0;
+          width: 99.8%;
+        }		    
 			
 		</style>
 	</head>
 	
 	<body>
-	
-        <table>
+    <div class="main">
+        
+        <span>
+        <table class="navbar">
             <thead>
                 <tr>
                     <th style="text-align:left"><a href="https://kmn5409.github.io/keanu.nichols/"> About me</a></th>
-                    <th style="text-align:middle"><a href="Batman">Batman</a></th>
+                    <th id="Bat"><a href="Batman">Batman</a></th>
                     <th style="text-align:right"><a href="prac1">Detective Conan</a></th>
                 </tr>
             </thead>
         </table>
+        </span>
 		
 	    <h1>All about Batman!</h1>
 	    
@@ -109,5 +123,6 @@
 			<li>Scarecrow</li>
 		</ol>
 		<p>Read more here about <a target="_blank" href="http://batman.wikia.com/wiki/Batman_Wiki"> Batman</a></p>
+	</div>
 	</body>
 </html>
