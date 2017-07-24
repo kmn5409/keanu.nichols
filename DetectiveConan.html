@@ -4,24 +4,21 @@
 		<meta charset="utf-8">
 		<title>Interests</title>
 		<style>
-		    body{
+
+            body{
                 margin:auto;
-                border:1px ridge rosybrown;
-                padding:1px;
                 font-size:20px;
                 vertical-align:baseline;
                 background-color:steelblue;
             }
 
-            #Bat{
-                position:relative;
-                left:8.5%;
-            }
             
 			table{
-		        background-color:red;
-		        width:100%;
-		    }
+                table-layout:fixed;
+                background-color:red;
+                width:100%;
+                padding-right:1px;
+            }
 			
 			table a:hover{
 		        background-color:cyan;
@@ -32,7 +29,6 @@
               position: fixed;
               z-index: 2;
               top: 0;
-              width: 99.8%;
             }
             
             a{
@@ -45,16 +41,18 @@
 	<body>
     <div class="main">
         
+        <br><br>
         <span>
-        <table class="navbar">
-            <thead>
-                <tr>
-                    <th style="text-align:left"><a href="https://kmn5409.github.io/keanu.nichols/"> About me</a></th>
-                    <th id="Bat"><a href="Batman">Batman</a></th>
-                    <th style="text-align:right"><a href="prac1">Detective Conan</a></th>
-                </tr>
-            </thead>
-        </table>
+            <table class="navbar">
+                <thead>
+                    <tr>
+                        <th style="text-align:left" id="Home"><a href="Home">Home</a></th>
+                        <th><a href="Keanu"> About me</a></th>
+                        <th id="Bat"><a href="Batman">Batman</a></th>
+                        <th style="text-align:right"><a href="DetectiveConan">Detective Conan</a></th>
+                    </tr>
+                </thead>
+            </table>
         </span>
 		
 		<h1>Detective Conan</h1>
