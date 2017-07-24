@@ -6,13 +6,12 @@
 		
 		<style>
 		    
-		    body{
-		        font-size:20px;
-		        background-color:rgb(192,192,192);
-		        margin:auto;
-                border:1px ridge rosybrown;
-                padding:1px;
-		    }
+            body{
+                margin:auto;
+                font-size:20px;
+                vertical-align:baseline;
+                background-color:rgb(192,192,192);
+            }
 		    
 		    h1{
 		        text-align:center;
@@ -41,11 +40,6 @@
 		        font-weight:bold;
 		    }
 		    
-            #Bat{
-                position:relative;
-                left:8.5%;
-            }		    
-		    
 		    #def{
 		        font-style:italic;
 		    }
@@ -58,10 +52,13 @@
 		    ol{
 		        width:10%;
 		    }
-		    table{
-		        background-color:red;
-		        width:100%;
-		    }
+		    
+            table{
+                table-layout:fixed;
+                background-color:red;
+                width:100%;
+                padding-right:1px;
+            }
 		    
 		    img{
 		        display: block;
@@ -92,15 +89,16 @@
     <div class="main">
         
         <span>
-        <table class="navbar">
-            <thead>
-                <tr>
-                    <th style="text-align:left"><a href="https://kmn5409.github.io/keanu.nichols/"> About me</a></th>
-                    <th id="Bat"><a href="Batman">Batman</a></th>
-                    <th style="text-align:right"><a href="prac1">Detective Conan</a></th>
-                </tr>
-            </thead>
-        </table>
+            <table class="navbar">
+                <thead>
+                    <tr>
+                        <th style="text-align:left" id="Home"><a href="Home">Home</a></th>
+                        <th><a href="Keanu"> About me</a></th>
+                        <th id="Bat"><a href="Batman">Batman</a></th>
+                        <th style="text-align:right"><a href="prac1">Detective Conan</a></th>
+                    </tr>
+                </thead>
+            </table>
         </span>
 		
 	    <h1>All about Batman!</h1>
