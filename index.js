@@ -5,8 +5,8 @@ var one = "#10e88a",
 		five = "#bb6774";
 
 (window).on("scroll touchmove", function() {
-		if (jQuery(document).scrollTop() >= ("#one").position().top) {
-				(jQuery).('body').css('background', (jQuery).("#one").attr("data-color"));
+		if ((document).scrollTop() >= ("#one").position().top) {
+				('body').css('background', ("#one").attr("data-color"));
 
 		};
 		if ($(document).scrollTop() > $("#two").position().top) {
