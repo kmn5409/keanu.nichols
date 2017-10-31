@@ -1,4 +1,4 @@
-(function(){
+$(function(){
     zoom = $('.feature').css('background-size')
     zoom = parseFloat(zoom)/100
     size = zoom * $('.feature').width();
@@ -18,7 +18,7 @@
     });
 });
 
-(function (){
+$(function (){
     var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
     var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
 
@@ -31,4 +31,4 @@
         });
     }
 });
-console.log("sigh");
+console.log("hey");
