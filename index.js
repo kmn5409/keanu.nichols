@@ -6,7 +6,7 @@ var one = "#10e88a",
 
 (window).on("scroll touchmove", function() {
 		if (jQuery(document).scrollTop() >= ("#one").position().top) {
-				jQuery('body').css('background', jQuery("#one").attr("data-color"));
+				(jQuery)('body').css('background', (jQuery)("#one").attr("data-color"));
 
 		};
 		if ($(document).scrollTop() > $("#two").position().top) {
