@@ -23,4 +23,4 @@ var one = "#10e88a",
 		if ($(document).scrollTop() >= $("#five").position().top) {
 				$('body').css('background', $("#five").attr("data-color"))
 		};
-})(jQuery);
+});
