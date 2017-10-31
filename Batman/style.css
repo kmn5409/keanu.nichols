@@ -1,0 +1,233 @@
+body{
+    margin:auto;
+    font-size:20px;
+    vertical-align:baseline;
+    background-color:rgb(192,192,192);
+}
+
+h1{
+    text-align:center;
+    font-size:4em;
+    color:blueviolet;
+    text-decoration:underline;
+    text-shadow:2px 2px yellow;
+    font-family:mono-space;
+}
+h2{
+    font-family:sans-serif;
+    color:blue;
+    font-size:3em;
+}
+
+#villains li, #attributes li{
+    display:block;
+    font-family:monospace;
+    color:red;
+    background-color:green;
+    font-size:1em;
+    line-height:2em;
+    width:100%;
+    padding-right:10%;
+    padding-left:10%;
+}
+
+
+#bad{
+    font-weight:bold;
+}
+
+#def{
+    font-style:italic;
+}
+
+
+a{
+    color:blue;
+}
+
+ol{
+    width:10%;
+}
+
+table{
+    table-layout:fixed;
+    background-color:red;
+    width:100%;
+    padding-right:1px;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table a:hover{
+    background-color:cyan;
+}
+
+p a:hover{
+    background-color:purple;
+}
+
+.navbar {
+overflow: hidden;
+position: fixed;
+z-index: 2;
+top: 0;
+}		    
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+  }
+  @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+      }
+      
+      @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+      }
+      
+      
+      @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+      #cssmenu {
+        background: #f96e5b;
+        width: 100%;
+      }
+      #cssmenu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        display: block;
+        zoom: 1;
+      }
+      #cssmenu ul:after {
+        content: " ";
+        display: block;
+        font-size: 0;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+      }
+      #cssmenu ul li {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+      }
+      #cssmenu.align-right ul li {
+        float: right;
+      }
+      #cssmenu.align-center ul {
+        text-align: center;
+      }
+      #cssmenu ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        display: block;
+        padding: 15px 25px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 14px;
+        position: relative;
+        -webkit-transition: color .25s;
+        -moz-transition: color .25s;
+        -ms-transition: color .25s;
+        -o-transition: color .25s;
+        transition: color .25s;
+      }
+      #cssmenu ul li a:hover {
+        color: #333333;
+      }
+      #cssmenu ul li a:hover:before {
+        width: 100%;
+      }
+      #cssmenu ul li a:after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: -3px;
+        top: 19px;
+        height: 6px;
+        width: 6px;
+        background: #ffffff;
+        opacity: .5;
+      }
+      #cssmenu ul li a:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 0;
+        background: #333333;
+        -webkit-transition: width .25s;
+        -moz-transition: width .25s;
+        -ms-transition: width .25s;
+        -o-transition: width .25s;
+        transition: width .25s;
+      }
+      #cssmenu ul li.last > a:after,
+      #cssmenu ul li:last-child > a:after {
+        display: none;
+      }
+      #cssmenu ul li.active a {
+        color: #333333;
+      }
+      #cssmenu ul li.active a:before {
+        width: 100%;
+      }
+      #cssmenu.align-right li.last > a:after,
+      #cssmenu.align-right li:last-child > a:after {
+        display: block;
+      }
+      #cssmenu.align-right li:first-child a:after {
+        display: none;
+      }
+      
+      @media screen and (max-width: 768px) {
+        #cssmenu ul li {
+          float: none;
+          display: block;
+        }
+        #cssmenu ul li a {
+          width: 100%;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          border-bottom: 1px solid #fb998c;
+        }
+        #cssmenu ul li.last > a,
+        #cssmenu ul li:last-child > a {
+          border: 0;
+        }
+        #cssmenu ul li a:after {
+          display: none;
+        }
+        #cssmenu ul li a:before {
+          display: none;
+        }
+      }
+      
+      #cssmenu ul li{
+          width:24%;
+      }
+      
+      #menu li a:hover{
+          background-color:transparent;
+      }
+
+
+#attributes li{
+    width:50%;
+    padding-left:1%;
+    width:25%;
+    padding-right:1%;
+}
