@@ -24,4 +24,3 @@ var one = "#10e88a",
 				$('body').css('background', $("#five").attr("data-color"))
 		};
 });
-jackHarnerSig("light")
