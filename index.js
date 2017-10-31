@@ -4,6 +4,7 @@ var one = "#10e88a",
 		four = "#f88f18",
 		five = "#bb6774";
 
+var $=jQuery;
 (window).on("scroll touchmove", function() {
 		if ($(document).scrollTop() >= ("#one").position().top) {
 				$('body').css('background', $("#one").attr("data-color"));
