@@ -252,7 +252,7 @@ h1 span{
 .fa {
   padding: 20px;
   font-size: 30px;
-  width: 30px;
+  width: 70px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
@@ -289,3 +289,7 @@ h1 span{
   color: white;
 }
 
+
+#social{
+  width:100%;
+}
