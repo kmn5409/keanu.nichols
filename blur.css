@@ -1,0 +1,16 @@
+* {box-sizing:border-box}
+body, html {padding:0; margin:0} 
+div .opaque {position:inherit; top:0px; left:0; right:0; bottom:0; opacity:0;}
+.lt-ie9 .opaque {display:none;}
+.feature {position:fixed; top:0; z-index:-5; width:100%; padding-top:50%; background: url(File_002.jpg) center center no-repeat;
+    -webkit-background-size:150%;
+       -moz-background-size:150%;
+         -o-background-size:150%;
+            background-size:250%;
+    -webkit-box-shadow: 0 -50px 20px -20px #232323 inset;
+       -moz-box-shadow: 0 -50px 20px -20px #232323 inset;
+            box-shadow: 0 -50px 20px -20px #232323 inset;
+  }
+
+@media only screen and (min-width:36.250em) {
+}
